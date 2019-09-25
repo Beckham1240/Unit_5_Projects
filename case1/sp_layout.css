@@ -6,26 +6,46 @@
    Case Problem 1
    
    Layout styles for Slate and Pencil Tutoring
-   Author: 
-   Date:   
+   Author: Beckham Le
+   Date:  9/25/19
    
    Filename: sp_layout.css
 
 */
 
 /* Window and Body Styles */
-
+html{
+   height: 100%;
+}
+body{
+   width: 95%;
+   top: 640px;
+   bottom: 960px;
+   margin-left: auto;
+   margin-right: auto;
+}
+header, nav, ul, li, a{
+   box-sizing: border-box;
+}
 
 
 
 /* Row Styles */
-
+header.row, ul.row::after{
+   clear: both;
+   content: "";
+   display: table;
+}
 
 
 
 
 /* Page Header Styles */
-
+body header>img{
+   display: block;
+   width: 70%;
+   float: left;
+}
 
 
 
