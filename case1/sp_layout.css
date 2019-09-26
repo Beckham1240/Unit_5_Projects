@@ -13,7 +13,9 @@
 
 */
 
+
 /* Window and Body Styles */
+/*makes the page body centered and take up the space from the top to the bottom */
 html{
    height: 100%;
 }
@@ -21,6 +23,8 @@ body{
    width: 95%;
    top: 640px;
    bottom: 960px;
+   text-align: center;
+   min-height: 100%;
    margin-left: auto;
    margin-right: auto;
 }
@@ -29,49 +33,104 @@ header, nav, ul, li, a{
 }
 
 
-
 /* Row Styles */
-header.row, ul.row::after{
+/*clears the floated items and displays after*/
+.row::after{
    clear: both;
    content: "";
    display: table;
 }
 
 
-
-
 /* Page Header Styles */
+/*makes the nav items a block and align on the left*/
 body header>img{
    display: block;
    width: 70%;
    float: left;
 }
 
+body>header nav{
+   float:left; 
+   padding-left: 2%;
+   padding-right: 2%;
+   width: 30%;
+   text-align: left;
+}
 
-
+header a{
+   display: block;
+   width:100%;
+}
 
 
 /* Horizontal Navigation List Styles */
-
+nav.horizontal li{
+   display: block;
+   width: 12.5%;
+   float: left;
+}
 
 
 
 /* Topics Styles */
-
-
+ul#topics li{
+   display: block;
+   width: 20%;
+   float: left;
+   margin-left: 0%;
+   margin-right: 1.5%;
+}
+ul#topics li:first-of-type{
+   margin-left: 7.75%;
+}
+ul#topics li:last-of-type{
+   margin-right: 7.75%;
+}
+ul#topics li img{
+   display: block;
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+}
 
 
 
 
 /* HR Styles */
-
-
+hr{
+   width: 50%;
+}
 
 
 /* Customer Comment Styles */
-
-
+ul#comments{
+   width: 75%;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin-left: auto;
+   margin-right: auto;
+}
+ul#comments li{
+   display:block;
+   width: 50%;
+   float: left;
+   margin-bottom: 30px;
+}
+ul#comments li>img{
+   display: block;
+   width: 20%;
+   float: left;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+ul#comments li>p{
+   float: left;
+   width: 70%;
+}
 
 /* Footer Styles */
-
+footer{
+   clear: both;
+}
 
