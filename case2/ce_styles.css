@@ -13,15 +13,79 @@
 
 
 /* Window and Body Styles */
-
-
+/* changed the background color of the html and the body, font, 
+centers the page, fits all the images onto the page, 
+and removes the underlining for the hyperlinks */
+html{
+   background-color: rgb(101,101,101)
+}
+body{
+   background-color: white;
+   font-family: Verdana, Geneva, Arial, sans-serif;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 95%;
+   min-width: 320px;
+   max-width: 960px;
+   position: relative;
+}
+img{
+   display: block;
+   width: 100%;
+}
+nav a{
+   text-decoration: none;
+}
 
 /* Body Header Styles */
-
-
+/*changes the color of the links, the color when hovered, makes links float left, 
+adds padding, and changes the background color of the header*/
+body header{
+   background-color: rgb(191,68,70);
+   height: 40px;
+}
+header nav>ul li{
+   display: block;
+   float: left;
+   margin-right: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 0px;
+   padding-right: 0px;
+}
+header nav a:link, header nav a:visited{
+   font-size: 0.9em;
+   color: rgb(51,51,51)
+}
+header nav a:hover, header nav a:active{
+   color: rgb(255,211,211);
+}
 
 /* DIV Container Styles */
-
+/*adds padding to all divs with id container and makes the links for 
+divs with class cell become blocks and adds padding*/
+div#container{
+   padding-right: 8px;
+   padding-bottom: 8px;
+}
+div.cell a{
+   display: block;
+   width: 100%;
+   padding-left: 8px;
+   padding-top: 8px;
+}
 
 
 /* Footer Styles */
+/*positions the footer on the bottom right, changes the color of it, 
+and makes the font size so that the text resizes automatically*/
+footer{
+   position: absolute;
+   right: 8px;
+   bottom: 8px;
+   color: rgb(143,33,36);
+   text-align: right;
+   font-size: 2vmin;
+}
