@@ -13,4 +13,11 @@
    Supporting Files: 
 
 */
-
+html{
+   background-color: rgb(152, 94, 39);
+}
+body{
+   min-width: 640px;
+   max-width: 960px;
+   background-color: green;
+}
